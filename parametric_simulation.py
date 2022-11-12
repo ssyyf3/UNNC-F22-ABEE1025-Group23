@@ -43,7 +43,7 @@ def run_one_simulation_helper(eplus_run_path, idf_path, output_dir,
 
 def run_one_parameter_parametric(eplus_run_path, idf_path, output_dir,
 	                            parameter_key, parameter_vals):
-
+	
 	"""
 	Args:
 	---------
@@ -69,7 +69,6 @@ def run_one_parameter_parametric(eplus_run_path, idf_path, output_dir,
                     and the first simulation will change the value 
                     of the key in parameter_key to 0.1, 
                     the second will be 0.2, etc. 
-
     Output:
     -------------
 	output_paths: dict type, the key in the dict is the parameter 
@@ -81,7 +80,6 @@ def run_one_parameter_parametric(eplus_run_path, idf_path, output_dir,
 	            0.3: ‘param_sim_res/run_3/eplusout.csv’,
 	            0.4: ‘param_sim_res/run_4/eplusout.csv’,
 	            0.5: ‘param_sim_res/run_5/eplusout.csv’}
-
 	"""
 	
 	# have a dictiona
